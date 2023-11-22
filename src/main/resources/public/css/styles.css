@@ -1,0 +1,16 @@
+/* Add this to your CSS file */
+.profile-picture {
+    background-image: url("images/profilepic.jpeg"); /* Adjust the path */
+    /* Position the image at the top right corner */
+    position: absolute;
+    top: 90%;
+    right: 100%;
+
+    /* Resize the image to be smaller */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%; /* Makes the image circular */
+    background-size: cover; /* Scale the image to cover the div */
+
+    /* Add any other styling as needed */
+}

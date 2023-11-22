@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- You can include other external CSS or JavaScript files here -->
+</head>
+<body>
+<header>
+    <h1>Login page</h1>
+    <a href="/">Homepage</a>
+
+    <p> Hello {{ username }} </p>
+
+
+    <form action="/Login-Handler" method="post" autocomplete="off">
+        <label for="email">Email * : </label>
+        <input type="text" name="email" id="email"/>
+        <br>
+
+        </br>
+        <label for="password">password * : </label>
+        <input type="text" name="password" id="password"/>
+        <br>
+
+        </br>
+        <input type="submit" value="Login"/>
+    </form>
+
+</body>
+</html>

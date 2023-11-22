@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <!-- You can include other external CSS or JavaScript files here -->
+</head>
+<body>
+<header>
+    <main>
+        <!-- Your main content goes here -->
+        <h2>Welcome to Our Website</h2>
+        <p>This is a sample web page template.</p>
+    </main>
+    <h1>Home page</h1>
+    /Users/gordonosoo/IdeaProjects/week-one/src/main/java/ke/co/safaricom/App.java
+    <p> Hello {{ username }} </p>
+    <a href="/Login">Login</a>
+    <div class="profile-picture"></div>
+
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="/Contact">Contact</a></li>
+        </ul>
+    </nav>
+    {{#if users}}
+        {{#each users}}
+            <div>
+                <p>name : {{name }}</p>
+                <p>Email : {{email }}</p>
+                <p>passcode : {{ passcode}}</p>
+                <p>deleted : {{ deleted}}</p>
+            </div>
+            <br>
+        {{/each}}
+    {{ else }}
+        <p> There are no users in the db</p>
+
+        {{/if }}
+</header>
+
+
+
+<footer>
+    <p>&copy; 2023 Your Company Name</p>
+</footer>
+</body>
+</html>
